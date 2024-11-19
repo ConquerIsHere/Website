@@ -1,15 +1,490 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <h1>Hey, I'm Vipin</h1>
+    <title>Vipin Konki - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <h2>About Me</h2>
-    <p>I'm a Newbie to this Digital World</p>
-    <h2>What I'm working on</h2>
-    <p>I'm obsessed with learning JavaScript and obviously Gaming</p>
+    <!-- Cursor Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <nav class="side-nav">
+        <a href="#home" class="nav-dot" data-section="home">
+            <i class="fas fa-home"></i>
+            <span class="tooltip">Home</span>
+        </a>
+        <a href="#about" class="nav-dot" data-section="about">
+            <i class="fas fa-user"></i>
+            <span class="tooltip">About</span>
+        </a>
+        <a href="#education" class="nav-dot" data-section="education">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="tooltip">Education</span>
+        </a>
+        <a href="#skills" class="nav-dot" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span class="tooltip">Skills</span>
+        </a>
+        <a href="#experience" class="nav-dot" data-section="experience">
+            <i class="fas fa-briefcase"></i>
+            <span class="tooltip">Experience</span>
+        </a>
+        <a href="#projects" class="nav-dot" data-section="projects">
+            <i class="fas fa-project-diagram"></i>
+            <span class="tooltip">Projects</span>
+        </a>
+        <a href="#certifications" class="nav-dot" data-section="certifications">
+            <i class="fas fa-certificate"></i>
+            <span class="tooltip">Certifications</span>
+        </a>
+        <a href="#contact" class="nav-dot" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span class="tooltip">Contact</span>
+        </a>
+    </nav>
+
+    <div id="particles-js"></div>
+    <div class="water-ripple"></div>
+    <div class="gradient-overlay"></div>
+    <div class="container">
+        <header>
+            <div class="container">
+                <a href="#" class="logo">Vipin Konki</a>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <main>
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <div class="hero-text-wrapper">
+                        <h1 class="glowing-text">Hi, I'm <span class="highlight">Vipin Konki</span></h1>
+                        <div class="typing-container">
+                            <p class="subtitle">I'm a <span class="typing"></span></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="intro">Hello! I'm <span class="highlight">Vipin Konki</span>, a passionate Electronics and Communication Engineering student with a strong interest in software development and electronics.</p>
+                            
+                            <div class="about-details">
+                                <div class="detail-card">
+                                    <div class="detail-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <h3>Development</h3>
+                                        <p>I specialize in full-stack web development, with expertise in modern technologies like React, Node.js, and Python. I enjoy creating responsive and user-friendly applications.</p>
+                                    </div>
+                                </div>
+
+                                <div class="detail-card">
+                                    <div class="detail-icon">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <h3>Electronics</h3>
+                                        <p>My ECE background gives me a unique perspective in hardware-software integration. I work with microcontrollers and digital circuits to create innovative solutions.</p>
+                                    </div>
+                                </div>
+
+                                <div class="detail-card">
+                                    <div class="detail-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <div class="detail-content">
+                                        <h3>Problem Solving</h3>
+                                        <p>I thrive on tackling complex challenges and finding efficient solutions. My analytical mindset helps me approach problems from multiple angles.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="personal-interests">
+                                <h3>When I'm not coding</h3>
+                                <div class="interests-grid">
+                                    <div class="interest-item">
+                                        <i class="fas fa-music"></i>
+                                        <span>Writing Songs</span>
+                                        <p>Creating lyrics and collaborating with AI for beats</p>
+                                    </div>
+                                    <div class="interest-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Reading</span>
+                                        <p>Exploring tech and fiction books</p>
+                                    </div>
+                                    <div class="interest-item">
+                                        <i class="fas fa-camera"></i>
+                                        <span>Photography</span>
+                                        <p>Capturing moments and editing photos</p>
+                                    </div>
+                                    <div class="interest-item">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Gaming</span>
+                                        <p>Playing strategy and action games</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Bachelors in Engineering, ECE</h3>
+                            <div class="institution">Electronics and Communication Engineering</div>
+                            <div class="year">2020 - 2024</div>
+                            <p>Working hard in learning both the software and hardware that are used to develop and maintain electronic devices and worked on few projects to understand by applying the principles.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Class XII</h3>
+                            <div class="institution">Sri Chaitanya Junior College</div>
+                            <div class="year">2018 - 2020</div>
+                            <p>Completed intermediate education with focus on Mathematics, Physics, and Chemistry, laying a strong foundation for engineering studies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Class X</h3>
+                            <div class="institution">Sri Chaitanya Techno School</div>
+                            <div class="year">2018</div>
+                            <p>Completed secondary education with distinction, developing strong analytical and problem-solving skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-transition"></div>
+
+            <section id="skills" class="skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Frontend Development</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-react"></i>
+                                    <span>React</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-php"></i>
+                                    <span>PHP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Backend & Frameworks</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Node.js</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>CodeIgniter</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Flutter</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Data & Cloud</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fas fa-database"></i>
+                                    <span>SQL</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fab fa-aws"></i>
+                                    <span>AWS</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-chart-network"></i>
+                                    <span>Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Tools & Others</h3>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Verilog</span>
+                                </div>
+                                <div class="skill-item">
+                                    <i class="fas fa-paint-brush"></i>
+                                    <span>Photoshop</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="experience">
+                <h2>Professional Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <h3>Software Engineer</h3>
+                        <p class="company">Company Name</p>
+                        <p class="duration">June 2023 - Present</p>
+                        <ul class="responsibilities">
+                            <li>Developed and maintained scalable web applications</li>
+                            <li>Collaborated with cross-functional teams to deliver high-quality solutions</li>
+                            <li>Implemented CI/CD pipelines for automated deployment</li>
+                            <li>Optimized application performance and reduced loading times by 40%</li>
+                        </ul>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Software Development Intern</h3>
+                        <p class="company">Company Name</p>
+                        <p class="duration">May 2022 - Aug 2022</p>
+                        <ul class="responsibilities">
+                            <li>Assisted in developing new features for the company's main product</li>
+                            <li>Participated in code reviews and testing procedures</li>
+                            <li>Created technical documentation for new features</li>
+                            <li>Worked with senior developers to improve code quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Website Development Portfolio</h3>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>CodeIgniter</span>
+                            <span>SEO</span>
+                        </div>
+                        <p>Developed multiple professional websites using modern web technologies. Projects include:</p>
+                        <ul>
+                            <li>Multiple dynamic websites using CodeIgniter framework</li>
+                            <li>Personal portfolio website with modern UI/UX</li>
+                            <li>Implemented SEO best practices for improved visibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Brain Tumor Detection using CNN</h3>
+                        <div class="project-tags">
+                            <span>Deep Learning</span>
+                            <span>CNN</span>
+                            <span>Python</span>
+                            <span>Kaggle</span>
+                        </div>
+                        <p>Developed a deep learning model for brain tumor classification from MRI scans.</p>
+                        <ul>
+                            <li>Achieved 86% accuracy in tumor classification</li>
+                            <li>Implemented 4-layer CNN with dropout and max pooling</li>
+                            <li>Used fully connected layers for final classification</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Notepad Android App</h3>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Android</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <p>Developed a modern note-taking application for Android OS.</p>
+                        <ul>
+                            <li>Built for Pixel 6 using Flutter framework</li>
+                            <li>Clean and intuitive user interface</li>
+                            <li>Efficient note management system</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="certifications">
+                <h2>Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <h3>AI-ML Virtual Internship</h3>
+                        <div class="issuer">AWS Academy - AICTE</div>
+                    </div>
+                    <div class="cert-card">
+                        <h3>Machine Learning</h3>
+                        <div class="issuer">Deeplearning.ai (Andrew NG)</div>
+                    </div>
+                    <div class="cert-card">
+                        <h3>Tools for Data Science</h3>
+                        <div class="issuer">IBM</div>
+                    </div>
+                    <div class="cert-card">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <div class="issuer">University of Maryland</div>
+                    </div>
+                    <div class="cert-card">
+                        <h3>Principles of UI/UX Design</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email Me</h3>
+                                <p>konkivipin@gmail.com</p>
+                                <a href="mailto:konkivipin@gmail.com" class="contact-button">Send Email</a>
+                            </div>
+                            <div class="contact-card">
+                                <i class="fab fa-linkedin"></i>
+                                <h3>LinkedIn</h3>
+                                <p>Let's connect professionally</p>
+                                <a href="https://www.linkedin.com/in/vipin-konki-8b7003216/" target="_blank" class="contact-button">Connect</a>
+                            </div>
+                            <div class="contact-card">
+                                <i class="fab fa-github"></i>
+                                <h3>GitHub</h3>
+                                <p>Check out my projects</p>
+                                <a href="https://github.com/ConquerIsHere" target="_blank" class="contact-button">View Profile</a>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h3>Send Me a Message</h3>
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Message subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-info">
+                            <h3>Vipin Konki</h3>
+                            <p>Electronics & Communication Engineering Student</p>
+                            <p>Full Stack Developer</p>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <nav>
+                                <a href="#home">Home</a>
+                                <a href="#about">About</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#contact">Contact</a>
+                            </nav>
+                        </div>
+                        <div class="footer-social">
+                            <h4>Connect With Me</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/ConquerIsHere" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/vipin-konki-8b7003216/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:konkivipin@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Vipin Konki. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+        <script src="particles.js"></script>
+    </div>
 </body>
 </html>
